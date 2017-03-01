@@ -1,0 +1,85 @@
+$techhub: #f9b233;
+$family-serif: "Georgia", serif;
+
+$family-primary: "Open Sans", sans-serif;
+$primary: $techhub;
+
+@import "../../node_modules/bulma/bulma.sass";
+
+span.is-button-label {
+  font-weight: 600;
+}
+
+.hero-head-techhub {
+  background-color: $techhub;
+  .central-message {
+    color: #3d3c3c;
+    font-size: 22px;
+    align-self: center;
+    font-weight: 700;
+  }
+}
+
+.button-join {
+  span {
+    color: #222;
+  }
+}
+
+blockquote.is-large {
+  font-size: 1.4em;
+}
+
+span.li-title {
+  font-size: 1.25em;
+  line-height: 1.35em;
+  font-weight: 600;
+  display: block;
+}
+
+.ul-why-techhub li {
+  font-size: 19px;
+  margin-bottom: 15px;
+}
+
+.p-lead {
+  font-size: 19px;
+}
+
+.pricing {
+  font-size: 21px;
+  .single-price {
+    margin-bottom: 15px;
+  }
+}
+
+.hero.is-dark a.link-th {
+  color: $techhub;
+  &:hover {
+    color: darken($techhub, 15%);
+  }
+}
+
+.is-extralarge {
+  font-size: 2rem;
+}
+
+.footer.is-dark {
+  background-color: #3d3c3c;
+  .level-item {
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+  .footer-icons {
+    margin-top: 25px;
+    .icon {
+      font-size: 24px;
+    }
+    :not(:last-child) {
+      margin-right: 15px;
+    }
+  }
+  a:hover {
+    color: darken($techhub, 15%);
+  }
+}
