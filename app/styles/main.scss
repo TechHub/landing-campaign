@@ -96,14 +96,21 @@ span.li-title {
 }
 
 .bg-header {
-  background-image: url('/images/bg_header.jpg');
+  background-image: url('/images/bg_header_dark.jpg');
   background-repeat: no-repeat;
   background-position: top;
   background-size: cover;
 }
 
-.bg-footer {
-  background-image: url('/images/bg_footer.jpg');
+.bg-footer1 {
+  background-image: url('/images/bg4.jpg');
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+}
+
+.bg-footer2 {
+  background-image: url('/images/bg3.jpg');
   background-repeat: no-repeat;
   background-position: top;
   background-size: cover;
