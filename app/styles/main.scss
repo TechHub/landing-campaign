@@ -14,9 +14,20 @@ span.is-button-label {
   background-color: $techhub;
   .central-message {
     color: #3d3c3c;
-    font-size: 22px;
+    font-size: 16px;
     align-self: center;
     font-weight: 700;
+  }
+  @media (min-width:$tablet) {
+    position: fixed;
+    width: 100%;
+    z-index: 1999;
+    .central-message {
+      color: #3d3c3c;
+      font-size: 22px;
+      align-self: center;
+      font-weight: 700;
+    }
   }
 }
 
@@ -49,7 +60,7 @@ span.li-title {
 .pricing {
   font-size: 21px;
   .single-price {
-    margin-bottom: 15px;
+    margin-bottom: 10px;
   }
 }
 
