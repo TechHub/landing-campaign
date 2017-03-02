@@ -83,3 +83,17 @@ span.li-title {
     color: darken($techhub, 15%);
   }
 }
+
+.bg-header {
+  background-image: url('/images/bg_header.jpg');
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+}
+
+.bg-footer {
+  background-image: url('/images/bg_footer.jpg');
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+}
