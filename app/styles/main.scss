@@ -4,17 +4,32 @@ $family-serif: "Georgia", serif;
 $family-primary: "Roboto", sans-serif;
 $primary: $techhub;
 
-@import "../../node_modules/bulma/bulma.sass";
+@import "../../node_modules/bulma/sass/utilities/_all";
+@import "../../node_modules/bulma/sass/base/_all";
+@import "../../node_modules/bulma/sass/elements/button.sass";
+@import "../../node_modules/bulma/sass/grid/columns";
+@import "../../node_modules/bulma/sass/layout/_all";
+@import "../../node_modules/bulma/sass/elements/content";
+@import "../../node_modules/bulma/sass/elements/title";
+@import "../../node_modules/bulma/sass/elements/other";
+@import "../../node_modules/bulma/sass/components/nav";
+@import "../../node_modules/bulma/sass/components/level";
 
 span.is-button-label {
   font-weight: 600;
+}
+
+.content-padding {
+  @media (min-width:$tablet) {
+    padding: 0.75rem;
+  }
 }
 
 .hero-head-techhub {
   background-color: $techhub;
   .central-message {
     color: #3d3c3c;
-    font-size: 16px;
+    font-size: 15px;
     align-self: center;
     font-weight: 700;
   }
@@ -31,6 +46,17 @@ span.is-button-label {
   }
 }
 
+.hero-body-splash {
+  @media (max-width:$tablet) {
+    .title {
+      font-size: 2.4em;
+    }
+    .subtitle {
+      font-size: 1.75em;
+    }
+  }
+}
+
 .button-join {
   span {
     color: #222;
@@ -42,23 +68,23 @@ blockquote.is-large {
 }
 
 span.li-title {
-  font-size: 1.25em;
-  line-height: 1.35em;
+  font-size: 1.2em;
+  line-height: 1.25em;
   font-weight: 600;
   display: block;
 }
 
 .ul-why-techhub li {
-  font-size: 19px;
+  font-size: 1.2em;
   margin-bottom: 15px;
 }
 
 .p-lead {
-  font-size: 19px;
+  font-size: 1.2em;
 }
 
 .pricing {
-  font-size: 21px;
+  font-size: 1.25em;
   .single-price {
     margin-bottom: 10px;
   }
@@ -102,16 +128,29 @@ span.li-title {
   background-size: cover;
 }
 
+.bg-footer {
+  min-height: 300px;
+  @media (min-width: $tablet) {
+    min-height: 600px;
+  }
+}
+
 .bg-footer1 {
   background-image: url('/images/bg4.jpg');
   background-repeat: no-repeat;
   background-position: top;
-  background-size: cover;
+  background-size: contain;
+  @media (min-width:$tablet) {
+    background-size: cover;
+  }
 }
 
 .bg-footer2 {
   background-image: url('/images/bg3.jpg');
   background-repeat: no-repeat;
   background-position: top;
-  background-size: cover;
+  background-size: contain;
+  @media (min-width:$tablet) {
+    background-size: cover;
+  }
 }
