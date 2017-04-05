@@ -16,6 +16,14 @@ $radius: 0px;
 @import "../../node_modules/bulma/sass/components/nav";
 @import "../../node_modules/bulma/sass/components/level";
 
+.title-techhub {
+  font-family: "Rockwell W02", "Roboto";
+  font-weight: bold;
+}
+
+.subtitle-techhub {
+  font-family: "Rockwell W02", "Roboto";
+}
 span.is-button-label {
   font-weight: 600;
 }
@@ -59,11 +67,11 @@ span.is-button-label {
 }
 
 .button.button-join {
-  background-color: #388E3C;
-  border: 1px solid darken(#388E3C, 10);
+  background-color: #1565C0;
+  border: 1px solid darken(#1565C0, 10);
   &:hover {
-    background-color: darken(#388E3C, 5);
-    border: 1px solid darken(#388E3C, 10);
+    background-color: darken(#1565C0, 5);
+    border: 1px solid darken(#1565C0, 10);
   }
   span {
     color: #fff;
